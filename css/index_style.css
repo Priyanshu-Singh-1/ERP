@@ -1,0 +1,101 @@
+.centered-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: var(--background-color1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .school-logo {
+        height: 90px;
+        width: auto;
+        margin-right: 20px;
+    }
+    
+    .school-details {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .school_name {
+        font-size: 30px;
+        margin: 0;
+        color: #333;
+    }
+    
+    .school_description {
+        font-size: 15px;
+        margin: 0;
+        font-weight: bold;
+        color: var(--secondary-color);
+    }
+    
+    .developer_name:hover, .school_name:hover{
+        color: darkblue;
+        animation-duration: 1s;
+    }
+    @media screen and (max-width: 850px) {
+        .logo-container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        nav ul {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    
+    @media screen and (max-width: 490px) {
+        .school_name {
+            font-size: 16px;
+        }
+    
+        .school_description {
+            font-size: 12px;
+        }
+    }
+
+    footer {
+        background-color: var(--background-color1);
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .footer-content p,
+    .footer-content a {
+        margin: 0;
+        font-size: 18px;
+        color: #333;
+    }
+    
+    .footer-content a {
+        color: var(--primary-color);
+        transition: color 0.3s ease;
+    }
+    
+    .footer-content a:hover {
+        color: var(--secondary-color);
+    }
+    
+    .developer-info {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    
