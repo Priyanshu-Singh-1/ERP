@@ -33,7 +33,7 @@ if(!isset($_SESSION['admin_name'])){
 <body>
    
     <!-- for header part -->
-    <header>
+    <header class="centered-header">
         <div class="welcome-section">
             <h2>Welcome</h2>
             <div class="username"><?php echo $_SESSION['admin_name'] ?>!</div>
@@ -41,7 +41,7 @@ if(!isset($_SESSION['admin_name'])){
 
         <div class="school-info">
             <img src="./img/logo.png" class="school-logo" alt="School Logo">
-            <h2 style="font-size: 34px;" class="school_name">Vimal Hriday School, Purnea, Bihar</h2>
+            <!-- <h2 class="school_name">Vimal Hriday School, Purnea, Bihar</h2> -->
         </div>
  
         <div class="logosec">
@@ -51,7 +51,6 @@ if(!isset($_SESSION['admin_name'])){
                 id="menuicn"
                 alt="menu-icon">
         </div>
- 
     </header>
  
     <div class="main-container">
@@ -71,22 +70,14 @@ if(!isset($_SESSION['admin_name'])){
                 </div>
             </nav>
         </div>
+
         <div class="main">
  
-            <div class="searchbar2">
-                <input type="text"
-                       name=""
-                       id=""
-                       placeholder="Search">
-                <div class="searchbtn">
-                  <img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
-                        class="icn srchicn"
-                        alt="search-button">
-                  </div>
-            </div>
 
-            
+            <section class="school-details-section">
+                <h1 class="school_name">Vimal Hriday English Medium School</h1>
+                <p class="school_description">New Sipahi Tola, Purnea, 854 301, Bihar | UDISE Code: 10090402404</p>
+            </section>
             <div class="upload-section">
             <h3>Select Class/Section</h3>
                 <select name="class_section" id="classSectionDropdown">
@@ -126,7 +117,7 @@ if(!isset($_SESSION['admin_name'])){
             <?php
                 if (isset($_GET['class_section'])) {
                     $class_section = $_GET['class_section'];
-                    $table_name = "student_fees_" . $class_section;
+                    $table_name = strtolower("student_fees_" . $class_section);
                     $tableExists = $conn->query("SHOW TABLES LIKE '$table_name'")->num_rows > 0;
 
                     if ($tableExists) {
