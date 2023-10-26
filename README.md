@@ -59,9 +59,7 @@ You can view the live project [here](https://vhspureneaerp.com)
 
 ## :star: Show Your Support
 
-If you've found the Vimal Hriday School ERP System useful, please consider giving it a star on GitHub to show your support! Your encouragement motivates us to continue improving and adding new features.
+If you've found the Vimal Hriday School ERP System useful, please consider giving it a star on GitHub to show your support! Your encouragement motivates me to continue improving and adding new features.
 
-[![Star on GitHub](https://img.shields.io/github/stars/your_username/Vimal-Hriday-School-ERP.svg?style=social)](https://github.com/Priyanshu-Singh-1/ERP/stargazers)
-
-Thank you for your support! :heart:
+Thank you for the support! :heart:
 
