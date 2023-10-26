@@ -1,4 +1,4 @@
-# Vimal Hriday School ERP System :school:
+# Vimal Hriday School ERP System :school: - Freelance Work
 
 Welcome to the GitHub repository of Vimal Hriday School's ERP System! This is a comprehensive solution designed to streamline and automate the administration processes of VHS Purnea School, Bihar, India.
 
